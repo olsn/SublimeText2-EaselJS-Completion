@@ -1,0 +1,9 @@
+{
+	"scope": "easel-source.js - source",
+
+	"completions":
+	[
+		{ "trigger": "c", "contents": "createjs" },
+		"createjs"
+		
+}
