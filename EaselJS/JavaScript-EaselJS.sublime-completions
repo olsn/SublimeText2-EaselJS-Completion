@@ -1,8 +1,52 @@
 {
-    "scope": "easel-source.js - source",
+        "scope": "easel-source.js",
 
-    "completions":
-    [
+        "completions":
+        [
+        { "trigger": "createjs.Bitmap", "contents": "createjs.Bitmap(${1:imageOrUri <Image | HTMLCanvasElement | HTMLVideoElement | String>})"},
+        { "trigger": "createjs.BitmapAnimation", "contents": "createjs.BitmapAnimation(${1:spriteSheet <SpriteSheet>})"},
+        { "trigger": "createjs.Container", "contents": "createjs.Container()"},
+        { "trigger": "createjs.DOMElement", "contents": "createjs.DOMElement(${1:htmlElement <HTMLElement>})"},
+        { "trigger": "createjs.MovieClip", "contents": "createjs.MovieClip(${1:mode <String>}, ${2:startPosition <Number>}, ${3:loop <Boolean>}, ${4:labels <Object>})"},
+        { "trigger": "createjs.Shadow", "contents": "createjs.Shadow(${1:color <String>}, ${2:offsetX <Number>}, ${3:offsetY <Number>}, ${4:blur <Number>})"},
+        { "trigger": "createjs.Shape", "contents": "createjs.Shape(${1:OPTIONAL:graphics <Graphics>})"},
+        { "trigger": "createjs.SpriteSheet", "contents": "createjs.SpriteSheet(${1:data <Object>})"},
+        { "trigger": "createjs.SpriteSheetBuilder", "contents": "createjs.SpriteSheetBuilder()"},
+        { "trigger": "createjs.Stage", "contents": "createjs.Stage(${1:canvas <HTMLCanvasElement>})"},
+        { "trigger": "createjs.Text", "contents": "createjs.Text(${1:text <String>},${2:font <String>},${3:color <String>})"},
+        { "trigger": "createjs.AlphaMapFilter", "contents": "createjs.AlphaMapFilter(${1:alphaMap <Image>})"},
+        { "trigger": "createjs.AlphaMaskFilter", "contents": "createjs.AlphaMaskFilter(${1:mask <Image>})"},
+        { "trigger": "createjs.BoxBlurFilter", "contents": "createjs.BoxBlurFilter(${1:blurX <Number>}, ${2:blurY <Number>}, ${3:quality <Number>})"},
+        { "trigger": "createjs.ColorFilter", "contents": "createjs.ColorFilter(${1:greenMultiplier <Number>}, ${2:redMultiplier <Number>}, ${3:blueMultiplier <Number>}, ${4:alphaMultiplier <Number>}, ${5:redOffset <Number>}, ${6:greenOffset <Number>}, ${7:blueOffset <Number>}, ${8:alphaOffset <Number>})"},
+        { "trigger": "createjs.ColorMatrix", "contents": "createjs.ColorMatrix(${1:brightness <Number>}, ${2:contrast <Number>}, ${3:saturation <Number>}, ${4:hue <Number>})"},
+        { "trigger": "createjs.ColorMatrixFilter", "contents": "createjs.ColorMatrixFilter(${1:matrix <4x5 Matrix>})"},
+        { "trigger": "createjs.Matrix2D", "contents": "createjs.Matrix2D(${1:a <Number>}, ${2:b <Number>}, ${3:c <Number>}, ${4:d <Number>}, ${5:tx <Number>}, ${6:ty <Number>})"},
+        { "trigger": "createjs.Point", "contents": "createjs.Point(${1:x <Number=0>}, ${2:y <Number=0>})"},
+        { "trigger": "createjs.Rectangle", "contents": "createjs.Rectangle(${1:x <Number=0>}, ${2:y <Number=0>},${3:width <Number=0>}, ${4:height <Number=0>})"},
+        
+        { "trigger": "createjs.Touch.isSupported()", "contents": "createjs.Touch.isSupported()"},
+        { "trigger": "createjs.Touch.enable()", "contents": "createjs.Touch.enable()"},
+        { "trigger": "createjs.Touch.disable()", "contents": "createjs.Touch.disable()"},
+
+        { "trigger": "createjs.UID.get()", "contents": "createjs.UID.get()"},
+
+        { "trigger": "createjs.Ticker.addListener()", "contents": "createjs.Ticker.addListener(${1:o <Object>}, ${2:pauseable <Boolean>})"},
+        { "trigger": "createjs.Ticker.removeListener()", "contents": "createjs.Ticker.removeListener(${1:o <Object>})"},
+        { "trigger": "createjs.Ticker.removeAllListeners()", "contents": "createjs.Ticker.removeAllListeners()"},
+        { "trigger": "createjs.Ticker.setInterval()", "contents": "createjs.Ticker.setInterval(${1:interval <Number>})"},
+        { "trigger": "createjs.Ticker.getInterval()", "contents": "createjs.Ticker.getInterval()"},
+        { "trigger": "createjs.Ticker.setFPS()", "contents": "createjs.Ticker.setFPS(${1:value <Number>})"},
+        { "trigger": "createjs.Ticker.getFPS()", "contents": "createjs.Ticker.getFPS()"},
+        { "trigger": "createjs.Ticker.getMeasuredFPS()", "contents": "createjs.Ticker.getMeasuredFPS(${1:ticks <Number>})"},
+        { "trigger": "createjs.Ticker.setPaused()", "contents": "createjs.Ticker.setPaused(${1:value <Boolean>})"},
+        { "trigger": "createjs.Ticker.getPaused()", "contents": "createjs.Ticker.getPaused()"},
+        { "trigger": "createjs.Ticker.getTime()", "contents": "createjs.Ticker.getTime(${1:pauseable <Boolean>})"},
+        { "trigger": "createjs.Ticker.getTicks()", "contents": "createjs.Ticker.getTicks(${1:pauseable <Boolean>})"},
+
+        { "trigger": "createjs.SpriteSheetUtils.addFlippedFrames()", "contents": "createjs.SpriteSheetUtils.addFlippedFrames(${1:spriteSheet <SpriteSheet>}, ${2:horizontal <Boolean>}, ${3:vertical <Boolean>}, ${4:both <Boolean>})"},
+        { "trigger": "createjs.SpriteSheetUtils.extractFrame()", "contents": "createjs.SpriteSheetUtils.extractFrame(${1:spriteSheet <SpriteSheet>}, ${2:frame <Number>})"},
+        { "trigger": "createjs.SpriteSheetUtils.mergeAlpha()", "contents": "createjs.SpriteSheetUtils.mergeAlpha(${1:rgbImage <Image>}, ${2:alphaImage <Image>}, ${3:OPTIONAL:canvas <HTMLCanvasElement>})"},
+
         { "trigger": "Bitmap: initialize()", "contents": "initialize()"},
         { "trigger": "Bitmap: isVisible()", "contents": "isVisible()"},
         { "trigger": "Bitmap: draw()", "contents": "draw(${1:ctx <CanvasRenderingContext2D>},${2:ignoreCache <Boolean>})"},
